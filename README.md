@@ -1,6 +1,7 @@
 # MattBots-Public
 
-1. [Brief Summary and relevant links.](https://github.com/josealvarez97/MattBots-Public#1-brief-summary-and-relevant-links)
+[1. Brief Summary and relevant links.](https://github.com/josealvarez97/MattBots-Public#1-brief-summary-and-relevant-links)
+
 [2. The Story / Extended Summary](https://github.com/josealvarez97/MattBots-Public#2-extended-summary--the-story)
 3. Technical details of the app.
 4. More precise details on my contribution as the chief programmer of the project.
