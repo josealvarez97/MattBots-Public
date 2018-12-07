@@ -9,7 +9,7 @@
 
 MattBots is one of the ventures that best represents my skills. However, it is a personal venture for which I'm not willing to share the full source code. This repository highlights the main features, explains the design of the app, among other relevant things that allow to understand (and prove) the result of my work.
 
-**My role:** I'm the chief programmer of **TecúnTecs**, a group of young creators - that I started - currently developing (MattBots)[http://www.tecuntecs.com], a Game-Based Learning that will aim to stimulate Early Childhood Mathematical Thinking. 
+**My role:** I'm the chief programmer of **TecúnTecs**, a group of young creators - that I started - currently developing [MattBots](http://www.tecuntecs.com), a Game-Based Learning that will aim to stimulate Early Childhood Mathematical Thinking. 
 
 **The team:** To learn more about the team, visit [http://www.tecuntecs.com/#team](http://www.tecuntecs.com/#team)
 
