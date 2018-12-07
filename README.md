@@ -1,9 +1,9 @@
 # MattBots-Public
 
 [1. Brief Summary and relevant links.](https://github.com/josealvarez97/MattBots-Public#1-brief-summary-and-relevant-links)  
-[2. The Story / Extended Summary](https://github.com/josealvarez97/MattBots-Public#2-extended-summary--the-story)
-3. Technical details of the app.
-4. More precise details on my contribution as the chief programmer of the project.
+[2. The Story / Extended Summary](https://github.com/josealvarez97/MattBots-Public#2-extended-summary--the-story)  
+[3. Technical details of the app.]()  
+[4. More precise details on my contribution as the chief programmer of the project.]()  
 
 ![*Matt embarks in this epic robotic adventure full of mathematical challenges and intense learning!*](https://ksr-ugc.imgix.net/assets/022/413/395/fb5426b1f170cd461a184c4cbdb79ff9_original.JPG?ixlib=rb-1.1.0&w=680&fit=max&v=1535788360&auto=format&gif-q=50&q=92&s=29231ceb8112778884d6a309c0250a39)
 
