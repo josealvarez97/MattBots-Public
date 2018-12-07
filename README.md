@@ -18,7 +18,7 @@ The app is currently in a state of development, but a **demo can be tried out he
 * [Android APK DEMO VERSION (85 mb)](https://storage.googleapis.com/www.tecuntecs.com/mattbots-builds/MattBots-ByTecunTecs.apk)
 *  iPhone beta versions will be available after we raise enough funds.
 
-To get notice of the latest updates, please take a look at any of our social media channels by searching for **@mattbotsgame** ([Instagram](https://www.instagram.com/mattbotsgame/), **Facebook page**(https://www.facebook.com/mattbotsgame/))
+To get notice of the latest updates, please take a look at any of our social media channels by searching for **@mattbotsgame** ([Instagram](https://www.instagram.com/mattbotsgame/), [Facebook page](https://www.facebook.com/mattbotsgame/))
 
 # 2. Extended Summary / The Story
 
