@@ -227,7 +227,7 @@ Read more about us at [http://www.tecuntecs.com/#team](http://www.tecuntecs.com/
 Also, you can always reach out to any of us if you have more questions about our team dyanamics at [jose@tecuntecs.com](mailto:jose@tecuntecs.com), [oscar@tecuntecs.com](mailto:oscar@tecuntecs.com), [luis@tecuntecs.com](mailto:luis@tecuntecs.com).
 
 
-*We are not done yet, but it's been a great adventure so far alongside this great team.* 
+*We are not done yet, but it's been a wonderful adventure so far alongside this great team.* 
 
 
 
