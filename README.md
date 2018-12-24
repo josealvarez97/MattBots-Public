@@ -1,8 +1,8 @@
 # MattBots-Public
 
-[1. Overview and relevant links.](https://github.com/josealvarez97/MattBots-Public#1-overview-and-relevant-links)  
+[1. Overview and relevant links](https://github.com/josealvarez97/MattBots-Public#1-overview-and-relevant-links)  
 [2. Summary](https://github.com/josealvarez97/MattBots-Public#2-summary)  
-[3. Technical details of the app.]()  
+[3. Technical details of the app (and sample scripts)]()  
 [4. More precise details on my contribution as the chief programmer of the project.]()  
 
 ![*Matt embarks in this epic robotic adventure full of mathematical challenges and intense learning!*](https://ksr-ugc.imgix.net/assets/022/413/395/fb5426b1f170cd461a184c4cbdb79ff9_original.JPG?ixlib=rb-1.1.0&w=680&fit=max&v=1535788360&auto=format&gif-q=50&q=92&s=29231ceb8112778884d6a309c0250a39)
@@ -48,6 +48,10 @@ Or that time he got lost in a Mars-like dessert and saw himself in need of build
 ![](https://ksr-ugc.imgix.net/assets/022/413/750/644a96e7ad8be6290e3ceff9a044d093_original.png?ixlib=rb-1.1.0&w=680&fit=max&v=1535793708&auto=format&gif-q=50&lossless=true&s=559e254d8ac5f9e5f0e28afd0a0619b1)
 
 Immersing children in engaging and exciting experiences is a core part of MattBots. That's why we put time and effort in crafting every stage of the game.
+
+### But you were looking for something like a video trailer?
+
+[Check out this!](http://www.tecuntecs.com)
 
 # 3. Technical details of the app.
 (To be updated)
