@@ -295,5 +295,9 @@ Also, you can always reach out to any of us if you have more questions about our
 
 *We are not done yet, but it's been a wonderful adventure so far alongside this great team.* 
 
+![Jose, Luis, and Oscar](https://ksr-ugc.imgix.net/assets/022/452/482/6aeb837503e5cfdf178d48264d503457_original.png?ixlib=rb-1.1.0&w=680&fit=max&v=1536133904&auto=format&gif-q=50&lossless=true&s=d855a65bec3d0dfb1b0e35a93dac725c)
+
+*Myself, Luis, and Oscar*
+
 
 
