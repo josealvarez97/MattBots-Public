@@ -211,7 +211,7 @@ As every single stage of the game starts with a comic sequence that introduces t
     }
 ```
 
-* **We adhere to an arquitecture that aims to follow proper standards of OPP and event-driven paradigms**. Part of [EstimationLevelController.cs]()
+* **We adhere to an arquitecture that aims to follow proper standards of OPP and event-driven paradigms**. Excerpts part of [EstimationLevelController.cs](https://github.com/josealvarez97/MattBots-Public/blob/master/SampleScripts/EstimationLevelController.cs)
 
 ```c#
     public void Boss_OnBossDefeated(object sender, BossDefeatedEventArgs e)
@@ -234,7 +234,7 @@ As every single stage of the game starts with a comic sequence that introduces t
 }
 ```
 
-* **Here we have started to make use of UnityAnalytics API**. So far, normal analytics; but in the future, we plan to do more sophisticated analyses of our own to this data focused on finding patterns to inform *educational* feedback (not only common usage patterns and statistics). Part of [EstimationLevelController.cs]()
+* **Here we have started to make use of UnityAnalytics API**. So far, normal analytics; but in the future, we plan to do more sophisticated analyses of our own to this data focused on finding patterns to inform *educational* feedback (not only common usage patterns and statistics). Excerpt part of [EstimationLevelController.cs](https://github.com/josealvarez97/MattBots-Public/blob/master/SampleScripts/EstimationLevelController.cs)
 
 ```c#
     #region EventRaisers
