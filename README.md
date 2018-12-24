@@ -13,7 +13,7 @@
 
 MattBots is one of the ventures that best represents my skills. However, it is a personal venture for which I'm not willing to share the full source code. This repository highlights the main features, explains the design of the app, among other relevant things that allow to understand (and prove) the result of my work.
 
-P.S. The fact that I don't plan to post the full source code here doesn't mean that I won't be happy to walk you around any specific technical aspect of the app [*if you reach out*](mailto:j.alvarez@minerva.kgi.edu) - even the full source code!
+P.S. The fact that I don't plan to post the full source code here doesn't mean that I won't be **happy to walk you around any specific technical aspect of the app [*if you reach out*](mailto:j.alvarez@minerva.kgi.edu)** - even, then, the full source code!
 
 **My role:** I'm the chief programmer of **TecúnTecs**, a group of young creators - that I started - currently developing [MattBots](http://www.tecuntecs.com), a Game-Based Learning app that will aim to stimulate Early Childhood Mathematical Thinking. 
 
@@ -56,11 +56,7 @@ Immersing children in engaging and exciting experiences is a core part of MattBo
 
 # 3. Technical details of the app.
 
-MattBots is powered by Unity3D, a popular game engine that employs the c# programming language for its API.
-
-The current prototype of the app suppports keeping track of the users' progress.
-
-We plan to use UnityAnalytics to keep track of the player's interactions withing the game and use the data to inform relevant feedback.
+MattBots is powered by Unity3D, a popular game engine that employs the c# programming language for its API. The current prototype of the app leverages Unity's capabilities to define scriptable objects, follows well an OPP and event-driven paradigm, and suppports keeping track of the users' progress locally. In the future we plan to continue making further use of UnityAnalytics API to keep track of the player's interactions withing the game and use the data to inform relevant feedback.
 
 #### Diving more into details
 
@@ -215,6 +211,12 @@ As every single stage of the game starts with a comic sequence that introduces t
     }
 ```
 
+* **We adhere to an arquitecture that aims to follow proper standards of OPP and event-driven paradigms**.
+
+* **Here we have started to make use of UnityAnalytics API**. So far, normal analytics; but in the future, we plan to do more sophisticated analyses of our own to this data focused on finding patterns to inform *educational* feedback (not only common usage patterns and statistics).
+
+
 # 4. More precise details on my contribution as the chief programmer of the project.
-(To be updated)
+
+
 
