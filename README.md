@@ -211,9 +211,75 @@ As every single stage of the game starts with a comic sequence that introduces t
     }
 ```
 
-* **We adhere to an arquitecture that aims to follow proper standards of OPP and event-driven paradigms**.
+* **We adhere to an arquitecture that aims to follow proper standards of OPP and event-driven paradigms**. Part of [EstimationLevelController.cs]()
 
-* **Here we have started to make use of UnityAnalytics API**. So far, normal analytics; but in the future, we plan to do more sophisticated analyses of our own to this data focused on finding patterns to inform *educational* feedback (not only common usage patterns and statistics).
+```c#
+    public void Boss_OnBossDefeated(object sender, BossDefeatedEventArgs e)
+    {
+        bossReference.gameObject.SetActive(false);
+        progressWheel.StartProgressWheelDestruction();
+        levelPassedPanel.gameObject.SetActive(true);
+
+        OnLevelPassed();
+    }
+
+
+    public void PlayerHealthBar_OnPlayerDies(object sender, System.EventArgs e)
+    {
+        if (ApplicationModel.PlayingMode == PlayingMode.Battle)
+            pointsTracker.SaveBestScoreToFile();
+
+
+        levelLostPanel.gameObject.SetActive(true);
+}
+```
+
+* **Here we have started to make use of UnityAnalytics API**. So far, normal analytics; but in the future, we plan to do more sophisticated analyses of our own to this data focused on finding patterns to inform *educational* feedback (not only common usage patterns and statistics). Part of [EstimationLevelController.cs]()
+
+```c#
+    #region EventRaisers
+
+    protected virtual void OnLevelPassed()
+    {
+        if (levelPassedEventHandler != null)
+            levelPassedEventHandler(this, null);
+
+
+        // Adjust stars rating
+        StarsRating initialStarsRating = ApplicationModel.levelsStarsRatings[4];
+
+        if (playerReference.GetComponent<PlayerHealth>().currentHealth > 150f)
+            ApplicationModel.levelsStarsRatings[4] = StarsRating.ThreeStars;
+        else if (playerReference.GetComponent<PlayerHealth>().currentHealth > 100f)
+            ApplicationModel.levelsStarsRatings[4] = StarsRating.TwoStars;
+        else if (playerReference.GetComponent<PlayerHealth>().currentHealth > 50)
+            ApplicationModel.levelsStarsRatings[4] = StarsRating.OneStar;
+        else //if (failCount < 5)
+            ApplicationModel.levelsStarsRatings[4] = StarsRating.ZeroStars;
+
+        starsRatingComponent.GetComponent<StarsRatingComponent>().SetAppropriateStarRating();
+
+        // -- Analytics -- 
+        AnalyticsUtilities.ReportStandardEvent_LevelComplete(SceneManager.GetActiveScene(), 4, ApplicationModel.PlayingMode, (int)ApplicationModel.levelsStarsRatings[4], playerReference.GetComponent<PlayerHealth>().currentHealth / 200, Time.time);
+
+        if (ApplicationModel.levelsStarsRatings[4] > initialStarsRating)
+            ApplicationModel.SaveStarsRatingData();
+        else
+            ApplicationModel.levelsStarsRatings[4] = initialStarsRating;
+
+
+        //starsRatingComponent.gameObject.SetActive(true);
+
+        ApplicationModel.achievementsData.achievements[AchievementsData.MATT_WILL_RETURN_UNLOCKED].achieved = true;
+        ApplicationModel.SaveData<AchievementsData>(ApplicationModel.achievementsData);
+
+
+        bossReference.GetComponent<BossFire>().CancelInvoke("Fire");
+    }
+    #endregion
+}
+```
+
 
 
 # 4. More precise details on my contribution as the chief programmer of the project.
