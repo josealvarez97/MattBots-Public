@@ -55,7 +55,163 @@ Immersing children in engaging and exciting experiences is a core part of MattBo
 [Check out this!](http://www.tecuntecs.com)
 
 # 3. Technical details of the app.
-(To be updated)
+
+MattBots is powered by Unity3D, a popular game engine that employs the c# programming language for its API.
+
+The current prototype of the app suppports keeping track of the users' progress.
+
+We plan to use UnityAnalytics to keep track of the player's interactions withing the game and use the data to inform relevant feedback.
+
+#### Diving more into details
+
+* We make broad use of [Unity's scriptable objects]() in the application. Here's a funny example: As every single stage of the game starts with a comic sequence that introduces the player into the scenario (check out the demo!!!), I came up with a structure that allows to set each sequence in a matter of seconds. A 'Comic' file type, defined by the Comic class (specified as an escriptable object), in [Comic.cs]() contains fields for things like the sequence of images, an array of times for each image, an audio effects sequnce, general comic background music, and some other details; that later on are used by a comics manager attached to any game object in a scene that calls for a comic. [ComicsManager.cs]() makes some good use of such information, and plays the comic while loading the scene asynchronously, calculating and executing transitions smoothly. It is intended to be flexible and easy to use when needed, and hence defines methods such as 'PlayComic(Comic comic, Image comicsScreen)', 'PlayComicAndFreeze(Comic comic, Image comicsScreen)', and many others (in [ComicsManager.cs]()).
+
+* We have taken care to persis data of the user's locally (e.g., AchievementsData). For example, here are some excerpts of methods that save/load some data, and perform the necessary validatiosn and proper handling of common exceptions.
+
+*SaveData is a generic method that serializes some objects*
+
+```c#
+    public static void SaveData<TData>(TData objectToSave) where TData : Data, new()
+    {
+        if (!dataHasBeenLoaded)
+        {
+            Debug.LogError("Data had not been loaded yet.");
+            LoadSerialazableData();
+            Debug.Log("Loaded serialazable data");
+        }
+
+        string dataPath = null;
+        if (typeof(TData) == typeof(AchievementsData))
+            dataPath = GAME_ACHIEVEMENTS_PATH;
+
+
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + dataPath);
+
+
+        bf.Serialize(file, objectToSave);
+        file.Close();
+    }
+
+```
+
+*And calls these other guys*
+
+```c#
+    public static void LoadSerialazableData()
+    {
+        if (!dataHasBeenLoaded)
+        {
+            LoadRecordsData();
+            LoadStarsRatingData();
+            LoadData<AchievementsData>(ref achievementsData);
+            dataHasBeenLoaded = true;
+            Debug.Log("All Serializable Data Has Been Load");
+
+        }
+        else
+        {
+            Debug.LogError("WARNING: Attempt of loading serializable data when it had already been loaded.");
+        }
+
+
+
+    }
+```
+
+*Here we finally have some handling of common exceptions (excuse the raw comments, I pasted it as it is)*
+
+```c#
+    public static void LoadRecordsData()
+    {
+        Debug.LogAssertion("Loading Records Data");
+
+
+        // IF FILE EXISTS - LOAD IT!!!
+        if (File.Exists(Application.persistentDataPath + GAME_RECORDS_PATH))
+        {
+            Debug.LogAssertion("File exists.");
+
+
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + GAME_RECORDS_PATH, FileMode.Open);
+
+            RecordsData recordsData = null;
+            // Try deserializing it without problems.
+            try
+            {
+                recordsData = (RecordsData)bf.Deserialize(file);
+                file.Close();
+
+                Debug.Log("File serialization was possible. Records Data.");
+            }
+            // There was a problem deserializing, it's best to delete and start all over again.
+            catch (System.Runtime.Serialization.SerializationException e)
+            {
+                Debug.LogError("Serialization Exception. Data file will be deleted and recreated");
+                Debug.LogException(e);
+
+                file.Close();
+                File.Delete(Application.persistentDataPath + GAME_RECORDS_PATH);
+                recordsData = null;
+                Debug.LogAssertion("Exception Handled Successfully");
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Exception while Loading Records Data");
+                Debug.LogException(e);
+                throw e;
+            }
+
+
+            // WE GOTTA INITIALIZE ApplicationModel.levelsBestScores
+            //ApplicationModel.levelsBestScores = new Dictionary<int, int>(); Already done...
+
+            for (int i = 0; i < gameLevelsList.Count; i++)
+            {
+
+                int levelID = gameLevelsList[i].levelID;
+                Debug.Log("Initializing best score for level (ID) " + levelID);
+
+                // If Serialization was successful and there exists a value for the key
+                if (recordsData != null && recordsData.levelsBestScores != null)
+                    if (recordsData.levelsBestScores.ContainsKey(levelID))
+                    {
+                        Debug.Log("LEVEL BEST SCORE: " + recordsData.levelsBestScores[levelID].ToString());
+                        Debug.Log("Assigning best score (" + recordsData.levelsBestScores[levelID] + "for level (ID) " + levelID);
+
+                        // Assign such value to the static reference.
+                        ApplicationModel.levelsBestScores.Add(levelID, recordsData.levelsBestScores[levelID]);
+                        continue;
+                    }
+
+
+                // Otherwise
+                // It'll be initialized at zero 
+                ApplicationModel.levelsBestScores.Add(levelID, 0);
+            }
+
+
+
+            //dataHasBeenLoaded = true;
+            //initialRecordsData = recordsData;
+        }
+        // If no file was found...
+        else
+        {
+            Debug.LogAssertion("File does not exist.");
+
+            for (int i = 0; i < ApplicationModel.gameLevelsList.Count; i++)
+            {
+                int levelID = gameLevelsList[i].levelID;
+                ApplicationModel.levelsBestScores.Add(levelID, 0);
+            }
+        }
+
+
+        Debug.LogAssertion("Finish with Records Data");
+    }
+```
 
 # 4. More precise details on my contribution as the chief programmer of the project.
 (To be updated)
