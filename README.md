@@ -218,5 +218,16 @@ As every single stage of the game starts with a comic sequence that introduces t
 
 # 4. More precise details on my contribution as the chief programmer of the project.
 
+So far, I have done most of the programming, and **every single sample script or excerpt I have showcased here is part of what I have done by myself**. [@oswilehi](https://github.com/oswilehi), *a good old friend and great teammate*, has started to explore integrations with social media API's (we envision some features that may require parents/teachers to be able to log in), and options for database software & services as we are seeking to persist and handle some data in the cloud.
+
+[Luis](https://www.linkedin.com/in/luis-gerardo-hern%C3%A1ndez-de-le%C3%B3n-b16559103/) has been our great graphic designer. Remember to check our social media channels to see more of the result of his work (e.g., [Instagram page](https://www.instagram.com/mattbotsgame/)), if you are interested.
+
+Read more about us at [http://www.tecuntecs.com/#team](http://www.tecuntecs.com/#team).
+
+Also, you can always reach out to any of us if you have more questions about our team dyanamics at [jose@tecuntecs.com](mailto:jose@tecuntecs.com), [oscar@tecuntecs.com](mailto:oscar@tecuntecs.com), [luis@tecuntecs.com](mailto:luis@tecuntecs.com).
+
+
+*We are not done yet, but it's been a great adventure so far alongside this great team.* 
+
 
 
