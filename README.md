@@ -56,7 +56,7 @@ Immersing children in engaging and exciting experiences is a core part of MattBo
 
 # 3. Technical details of the app.
 
-MattBots is powered by Unity3D, a popular game engine that employs the c# programming language for its API. The current prototype of the app leverages Unity's capabilities to define scriptable objects, follows well an OPP and event-driven paradigm, and suppports keeping track of the users' progress locally. In the future we plan to continue making further use of UnityAnalytics API to keep track of the player's interactions withing the game and use the data to inform relevant feedback.
+MattBots is powered by Unity3D, a popular game engine that employs the c# programming language for its API. The current prototype of the app leverages Unity's capabilities to define scriptable objects, follows well an OPP and event-driven paradigm, and suppports keeping track of the users' progress locally. In the future we plan to continue making further use of UnityAnalytics API to keep track of the player's interactions within the game and use the data to inform relevant feedback.
 
 #### Diving more into details
 
