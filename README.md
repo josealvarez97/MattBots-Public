@@ -11,7 +11,7 @@
 
 # 1. Overview and relevant links.
 
-MattBots is one of the ventures that best represents my skills. However, it is a personal venture for which I'm not willing to share the full source code. This repository highlights the main features, explains the design of the app, among other relevant things that allow to understand (and prove) the result of my work.
+MattBots is one of the ventures that best represents my skills, not only technically. However, it is a personal venture for which I'm not willing to share the full source code. This repository highlights the main features, explains the design of the app, among other relevant things that allow to understand (and prove) the result of my work.
 
 P.S. The fact that I don't plan to post the full source code here doesn't mean that I won't be **happy to walk you around any specific technical aspect of the app [*if you reach out*](mailto:j.alvarez@minerva.kgi.edu)** - even, then, the full source code!
 
