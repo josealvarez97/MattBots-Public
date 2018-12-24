@@ -41,6 +41,7 @@ As Early Childhood Mathematical Thinking is a broad concept - you can find what 
 **Colorful comis will tell Matt's adventures**
 
 Such as that time when Matt played a dance battle against that jealous robot and defeated it.
+
 ![](https://ksr-ugc.imgix.net/assets/022/413/667/44d70e3e873811e179e25464ba39b7f0_original.png?ixlib=rb-1.1.0&w=680&fit=max&v=1535792397&auto=format&gif-q=50&lossless=true&s=3e26520c6771b82ecc9001c5e82b3b65)
 
 Or that time he got lost in a Mars-like dessert and saw himself in need of building a bridge to cross over a cliff - all because the other jealous robot threw his ship there.
