@@ -279,7 +279,28 @@ As every single stage of the game starts with a comic sequence that introduces t
     #endregion
 }
 ```
+```c#
+    /// <summary>
+    /// AnalyticsEvent.EventComplete
+    /// </summary>
+    /// <param name="scene"></param>
+    /// <param name="mode"></param>
+    /// <param name="stars"></param>
+    /// <param name="remainingLife"> Percentage. If 2 lives out of 3, send 2/3 </param>
+    /// <param name="timePlayed"></param>
+    public static void ReportStandardEvent_LevelComplete(Scene scene, int levelID, PlayingMode mode, int stars, float remainingLife, float timePlayed)
+    {
+        customParams = new Dictionary<string, object>
+        {
+            { PLAYING_MODE, mode },
+            { STARS, stars },
+            { REMAINING_LIFE, remainingLife },
+            { SECONDS_PLAYED, timePlayed }
+        };
+        AnalyticsEvent.LevelComplete(scene.name, levelID, customParams);
+    }
 
+```
 
 
 # 4. More precise details on my contribution as the chief programmer of the project.
