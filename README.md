@@ -19,10 +19,7 @@ P.S. The fact that I don't plan to post the full source code here doesn't mean t
 
 **The team:** To learn more about the team, visit [http://www.tecuntecs.com/#team](http://www.tecuntecs.com/#team)
 
-The app is currently in a state of development, but a **demo can be tried out here**: 
-* [Windows ZIP DEMO VERSION (90 mb)](https://storage.googleapis.com/www.tecuntecs.com/mattbots-builds/MattBots-ByTecunTecs.zip)
-* [Android APK DEMO VERSION (85 mb)](https://storage.googleapis.com/www.tecuntecs.com/mattbots-builds/MattBots-ByTecunTecs.apk)
-*  iPhone beta versions will be available after we raise enough funds.
+The BETA release of the app is now publicly [available on Google Play and you can download it for $0.99 USD](https://play.google.com/store/apps/details?id=com.tecuntecs.MattBots).
 
 To get notice of the latest updates, please take a look at any of our social media channels by searching for **@mattbotsgame** ([Instagram](https://www.instagram.com/mattbotsgame/), [Facebook page](https://www.facebook.com/mattbotsgame/))
 
