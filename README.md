@@ -15,7 +15,7 @@ MattBots is one of the ventures that best represents my skills, not only technic
 
 P.S. The fact that I don't plan to post the full source code here doesn't mean that I won't be **happy to walk you around any specific technical aspect of the app [*if you reach out*](mailto:j.alvarez@minerva.kgi.edu)** - even, then, the full source code!
 
-**My role:** I'm the chief programmer of **TecúnTecs**, a group of young creators - that I started - currently developing [MattBots](http://www.tecuntecs.com), a Game-Based Learning app that will aim to stimulate Early Childhood Mathematical Thinking. 
+**My role:** I'm the chief programmer of **Tecún Tecs**, a group of young creators - that I started in Guatemala City - currently developing [MattBots](http://www.tecuntecs.com), a Game-Based Learning app that will aim to stimulate Early Childhood Mathematical Thinking. 
 
 **The team:** To learn more about the team, visit [http://www.tecuntecs.com/#team](http://www.tecuntecs.com/#team)
 
