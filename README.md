@@ -11,7 +11,7 @@
 
 # 1. Overview and relevant links.
 
-MattBots is one of the ventures that best represents my skills, not only technically. However, it is a personal venture for which I'm not willing to share the full source code. This repository highlights the main features, explains the design of the app, among other relevant things that allow to understand (and prove) the result of my work.
+MattBots is one of the ventures that best represents my skills, not only technically. However, it is a for-profit venture that I started with two other partners (one fellow programmer and one graphic designer), reason for which the full source code is not available (but you can always [download the app for $0.99 USD on Google Play Store](https://play.google.com/store/apps/details?id=com.tecuntecs.MattBots)). This repository highlights the behind-the-scenes of some of the features, explains the design of the app, among other relevant things that allow to understand (and showcase) the result of my work.
 
 P.S. The fact that I don't plan to post the full source code here doesn't mean that I won't be **happy to walk you around any specific technical aspect of the app [*if you reach out*](mailto:j.alvarez@minerva.kgi.edu)** - even, then, the full source code!
 
